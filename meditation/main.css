@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import "normalize.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+  font-family: "Josefin Sans", sans-serif;
+  background: #fbf5ef;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 4.3rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1.4rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+}
+
+button {
+  padding: 13px 27px;
+
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: #f66150;
+  color: white;
+  font-size: 0.8em;
+  border-radius: 5px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
+
+strong {
+  font-size: 0.85rem;
+  font-weight: normal;
+  color: #f66150;
+}
+
+.light {
+  color: #fff;
+}
+
+.wrapper {
+  width: 60em;
+  max-width: 100%;
+
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+
+  padding-top: 15px;
+}
+
+.main-logo {
+  width: 180px;
+}
+
+.nav {
+  display: flex;
+  gap: 2.5em;
+
+  color: rgb(120, 126, 123);
+  font-size: 0.8rem;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  padding: 4em 0;
+}
+
+.text-1 {
+  flex-grow: 1;
+  flex-basis: 50%;
+
+  min-width: 20em;
+
+  padding: 1em;
+}
+
+.hero-1 {
+  flex-basis: 50%;
+
+  min-width: 20em;
+
+  padding: 1em;
+}
+
+.tips {
+  text-align: center;
+}
+
+.tips-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 4em;
+
+  padding: 4em 0;
+}
+
+.tips-item {
+  flex: 1;
+
+  min-width: 10em;
+}
+
+.tips-icon {
+  width: 6em;
+
+  margin-bottom: 2em;
+}
+
+.daily {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
+
+  padding: 6em;
+
+  background: #fff;
+}
+
+.hero-2 {
+  width: 34em;
+}
+
+.text-2 {
+  width: 17em;
+}
+
+.banner {
+  padding: 4em;
+
+  background-image: url("./img/section-background-1.jpg");
+  background-size: cover;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer {
+  text-align: center;
+
+  padding: 4em 0;
+}
+
+.rights {
+  font-family: "Roboto", sans-serif;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+
+  padding-bottom: 2em;
+}
+
+.social {
+  width: 2em;
+}

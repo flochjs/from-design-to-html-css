@@ -1,0 +1,155 @@
+@import "normalize.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-color: #404040;
+  --secondary-color: #6f6f6f;
+}
+
+body {
+  display: flex;
+  align-items: center;
+
+  min-height: 100vh;
+
+  margin: 0;
+  padding: 0;
+
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.pic {
+  width: 100%;
+  min-height: 100%;
+  height: calc(100vh - 6rem);
+  object-fit: cover;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header   profile-pic"
+    ".        profile-pic"
+    "family   profile-pic"
+    "ip       profile-pic"
+    "contract profile-pic";
+  grid-template-columns: 1.75fr 1fr;
+
+  font-size: 0.7em;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1em;
+
+  padding: 1em;
+
+  font-size: 2.9em;
+  background-color: #202020;
+}
+
+.header__logo {
+  padding: 0.7em;
+
+  border-radius: 45%;
+  background-color: #fff;
+  color: #000;
+  font-size: 2em;
+}
+
+.header__title {
+  margin: 0;
+
+  font-size: 2.75em;
+}
+
+.header__subtitle {
+  margin: 0;
+
+  color: var(--secondary-color);
+}
+
+.profile-pic {
+  grid-area: profile-pic;
+}
+
+.family {
+  grid-area: family;
+}
+
+.ip {
+  grid-area: ip;
+}
+
+.contract {
+  grid-area: contract;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  padding: 0.5em;
+
+  font-size: 2.65em;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.section + .section {
+  margin-top: 0.5em;
+}
+
+.section__title {
+  margin: 0;
+
+  font-weight: normal;
+}
+
+.section__description {
+  opacity: 0.75;
+
+  margin: 0;
+
+  font-size: 0.85em;
+}
+
+.section__arrow {
+  font-size: 2.7em;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "profile-pic"
+      "family"
+      "ip"
+      "contract";
+    grid-template-columns: initial;
+    grid-template-rows: initial;
+    grid-auto-rows: initial;
+    justify-content: center;
+    gap: 1em;
+
+    padding: 2rem;
+
+    font-size: 0.8em;
+  }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="build.css" />
+    <script src="build.js" defer></script>
+    <title>Footwear</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="header__nav">
+          <div class="icon">
+            <a href="#" class="fas fa-bars"></a>
+          </div>
+
+          <div class="header__mid-section">
+            <div class="icon">
+              <a href="#" class="fas fa-shoe-prints"></a>
+            </div>
+            <h1 class="header__title">Shoe are Us</h1>
+            <h3 class="header__subtitle">Find the right fit for you</h3>
+          </div>
+
+          <div class="icon">
+            <a href="#" class="fas fa-phone"></a>
+          </div>
+        </nav>
+      </header>
+      <main class="main">
+        <div
+          class="carousel"
+          role="listitem"
+          aria-roledescription="Carousel"
+          id="carousel"
+          data-infinite="true"
+          data-interval="400000"
+        >
+          <div class="carousel__contents">
+            <button
+              class="carousel__arrow"
+              aria-controls="carousel"
+              aria-label="Previous slide"
+            >
+              <div class="fa fa-chevron-left"></div>
+            </button>
+            <div class="carousel__list" aria-live="polite">
+              <div
+                class="carousel__item"
+                role="listbox"
+                aria-roledescription="slide"
+                aria-hidden="true"
+                data-text="Performance"
+                data-bg="#cb021c"
+              >
+                <img src="shoe-1.jpg" alt="shoe-1" />
+              </div>
+              <div
+                class="carousel__item"
+                role="listbox"
+                aria-roledescription="slide"
+                aria-hidden="true"
+                data-text="Design"
+                data-bg="#e0e1e3"
+              >
+                <img src="shoe-2.jpg" alt="shoe-2" />
+              </div>
+              <div
+                class="carousel__item"
+                role="listbox"
+                aria-roledescription="slide"
+                aria-hidden="true"
+                data-text="Comodity"
+                data-bg="#f6f7f9"
+              >
+                <img src="shoe-3.jpg" alt="shoe-3" />
+              </div>
+              <div
+                class="carousel__item"
+                role="listbox"
+                aria-roledescription="slide"
+                aria-hidden="true"
+                data-text="Lightness"
+                data-bg="#363837"
+              >
+                <img src="shoe-4.jpg" alt="shoe-4" />
+              </div>
+            </div>
+            <button
+              class="carousel__arrow"
+              aria-controls="carousel"
+              aria-label="Next slide"
+            >
+              <div class="fa fa-chevron-right"></div>
+            </button>
+          </div>
+          <button class="learn-more">Learn More</button>
+          <div
+            class="carousel__indicators"
+            aria-controls="carousel"
+            aria-label="carousel buttons"
+          >
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
